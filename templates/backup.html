@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Utils</title>
+</head>
+
+<body>
+
+    <div>
+        <a href="/">index</a>
+        <a href="/about">about</a>
+        <a href="/view">view</a>
+        <a href="/analyze">analyze</a>
+
+    </div>
+    <br>
+
+    <h3>Hello {{name}} </h3>
+    <h3>were you from {{place}}</h3>
+
+    <form action="/view" method="get">
+        <textarea name="test" style="margin: auto;width: 750px;height: auto;"></textarea><br>
+        <button type="submit">Print in View Page</button>
+    </form>
+
+    <h1>Welcome to the text analyzer. Enter your text below</h1>
+
+    <form action="/analyze" method="get">
+        <textarea name="text" style="margin: auto;width: 720px;height: 90px;"></textarea><br>
+        <input type="checkbox" name="removepunc">Remove Punctuation<br>
+        <input type="checkbox" name="capitalize">CAPITALIZE WORD<br>
+        <input type="checkbox" name="newLine">Remove New Line<br>
+        <input type="checkbox" name="space">Remove spaces<br>
+        <input type="checkbox" name="charcount">Count Charactor<br>
+        <button type="submit">Analyze Text</button>
+    </form>
+
+    {{con}}
+    <h2>This is the text you have given to me</h2>
+    {{data}}
+
+
+    <h1>Your Analyzed Text - {{purpose}}</h1>
+    <p>
+        {{analyzed_text}}
+    </p>
+</body>
+
+</html>
