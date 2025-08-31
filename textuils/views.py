@@ -30,13 +30,13 @@ def about(s):
 
 def view(s):
     file = "textuils/filename.txt"
-    text_data_index = s.POST.get('test','default')
+    text_data_index = s.POST.get('test','')
     
     with open (file)as f:
         contents = f.read()
     with open (file,'a')as f:
         if text_data_index != "default":
-            f.write(text_data_index)
+            f.write(f"\n\t{text_data_index}")
         else:
             f.close()
         

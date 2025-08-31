@@ -1,7 +1,4 @@
-Teradata Service Control :
-Teradata service control involves managing the start, stop, and status of individual Teradata system
-services, often via scripts found in the /etc/init.d directory for components like Teradata
-Viewpoint, or through the broader Teradata Customer Services (TCS) framework for overall change
-control and system management. Customers must also manage their own responsibilities for
-monitoring their systems and implementing software changes through the documented change
-control process and service policies.This is my first text typingWinner always a loser.This is second line.yes i am you too.I am worthy of  all the money.this is good website.this is good day.
+This is Notes:
+	this is good website.
+	
+	this is working very well.
